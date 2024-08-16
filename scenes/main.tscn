@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=4 format=3 uid="uid://s610lt7pvdv2"]
+
+[ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="1_11114"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_fs3fu"]
 size = Vector2(10, 10)
@@ -6,9 +8,16 @@ size = Vector2(10, 10)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xehk"]
 albedo_color = Color(0, 0.643137, 0.211765, 1)
 
-[node name="Node3D" type="Node3D"]
+[node name="Main" type="Node3D"]
 
 [node name="CSG_floor" type="CSGMesh3D" parent="."]
 use_collision = true
 mesh = SubResource("PlaneMesh_fs3fu")
 material = SubResource("StandardMaterial3D_4xehk")
+
+[node name="Globe" parent="." instance=ExtResource("1_11114")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23888, 0)
+_smooth_turn = false
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.780583, 0, -0.625052, 0.238491, 0.924346, 0.297835, 0.577765, -0.381554, 0.721529, 0, 5.48756, 0)
