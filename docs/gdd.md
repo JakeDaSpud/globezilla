@@ -1,0 +1,48 @@
+# Globezilla - The Tiny Delivery Game
+
+### _Blurb_
+Play as Globe the globetrotting Dinosaur, as you stomp across countries, delivering the world's goods!
+
+### _MVP (Minimum Viable Product)_
+- Assets
+- - Blockout Globe
+- - Blockout map
+- - Blockout package
+- Mechanics
+- - Globe grounded movement
+- - Pîckup location randomly spawns on country
+- - New drop location randomly spawns on different country
+- - Drop location works, triggers next pickup location
+- - After 15 rounds, display final time taken
+
+### _Gameplay Loop_
+When the game starts, there will be a package to grab, this will be spawned randomly across the map.
+You will be told what country that package is on (Difficulty -> might have an arrow pointing to the Country).
+Touch the package to grab it.
+You will now touch the Country it must be delivered to (Difficulty -> might have an arrow pointing to the Country).
+
+### _Mechanics_
+Grounded Movement: 
+- WASD / Arrow Keys
+Flying (After MVP): 
+- WS / Arrow Up, Down Key -> Pitch up / down
+- AD / Arrow Left, Right Key -> Roll left / right
+- Space -> Accelerate
+
+### _Inspiration_
+[Diddy Kong Racing (N64 / DS)](https://en.wikipedia.org/wiki/Diddy_Kong_Racing):
+I was thinking about this game a lot recently, I played the DS remake and loved it, I like how chunky the planes and cute characters are, so I wanted to try modelling the plane mechanics in my own game, but it will be post-MVP.
+- Planes
+- Vibrant Colours
+- Level Design
+- Models in general
+
+[Katamari Series](https://en.wikipedia.org/wiki/Katamari):
+I love the cute polygon styling of Katamari, my concept is similar too. The colours really pop.
+- Colours
+- Art Style / Direction
+
+[Crossy Road](https://en.wikipedia.org/wiki/Crossy_Road):
+The colours and low-effort modelling is something I want for my game too.
+- Colour contrast
+- Polygon Models
