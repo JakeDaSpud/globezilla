@@ -31,6 +31,8 @@ Flying (After MVP):
 - Space -> Accelerate
 
 ### _Inspiration_
+My [Pinterest](https://ie.pinterest.com/kaffestroemme/globezilla-gmtk-jam-2024/) board for the game.
+
 [Diddy Kong Racing (N64 / DS)](https://en.wikipedia.org/wiki/Diddy_Kong_Racing):\
 I was thinking about this game a lot recently, I played the DS remake and loved it, I like how chunky the planes and cute characters are, so I wanted to try modelling the plane mechanics in my own game, but it will be post-MVP.
 - Planes
