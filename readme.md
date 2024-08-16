@@ -16,6 +16,9 @@ Build:
 
 ### 📠footnote
 want to see my progress? here's the [devlog](https://github.com/JakeDaSpud/globezilla/blob/master/docs/devlog.md) for globezilla!
+
 here's the [gdd](https://github.com/JakeDaSpud/globezilla/blob/master/docs/gdd.md) too!
+
 final comments about how jam went
+
 \- jake
