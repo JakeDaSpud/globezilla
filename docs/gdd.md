@@ -24,6 +24,7 @@ Play as Globe the globetrotting Dinosaur, as you stomp across countries, deliver
 ### _Mechanics_
 Grounded Movement: 
 - WASD / Arrow Keys
+
 Flying (After MVP): 
 - WS / Arrow Up, Down Key -> Pitch up / down
 - AD / Arrow Left, Right Key -> Roll left / right
