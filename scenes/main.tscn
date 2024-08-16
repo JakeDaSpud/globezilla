@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=3 format=3 uid="uid://s610lt7pvdv2"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fs3fu"]
+size = Vector2(10, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xehk"]
+albedo_color = Color(0, 0.643137, 0.211765, 1)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="CSG_floor" type="CSGMesh3D" parent="."]
+use_collision = true
+mesh = SubResource("PlaneMesh_fs3fu")
+material = SubResource("StandardMaterial3D_4xehk")
