@@ -10,6 +10,7 @@ var _timer : int = 0;
 
 func _ready():
 	game_manager = get_parent();
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

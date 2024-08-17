@@ -30,6 +30,40 @@ Flying (After MVP):
 - AD / Arrow Left, Right Key -> Roll left / right
 - Space -> Accelerate
 
+Countries:
+- Ireland
+- United States of America
+- India
+- China
+- Russia
+- United Arab Emirates
+- Thailand
+- England
+- Scotland
+- Wales
+- Pakistan
+- Egypt
+- Israel
+- Nigeria
+- Germany
+- France
+- Spain
+- Iran
+- South Africa
+- Uganda
+- Ghana
+- Mexico
+- Turkey
+- Saudi Arabia
+- South Korea
+- Australia
+- Italy
+- Canada
+- Brazil
+- Japan
+- Austria
+- 
+
 ### _Inspiration_
 My [Pinterest](https://ie.pinterest.com/kaffestroemme/globezilla-gmtk-jam-2024/) board for the game.
 

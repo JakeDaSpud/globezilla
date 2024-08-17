@@ -1,20 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://db50ansbgm3ql"]
+[gd_scene load_steps=3 format=3 uid="uid://dcnplxbjhmua3"]
 
-[ext_resource type="Script" path="res://Scripts/on_screen_timer.gd" id="1_o5t2c"]
+[ext_resource type="Script" path="res://Scripts/on_screen_country.gd" id="1_8dy4u"]
 
 [sub_resource type="SystemFont" id="SystemFont_th1px"]
 subpixel_positioning = 0
 
-[node name="OnScreenTimer" type="Control"]
+[node name="OnScreenCountry" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_o5t2c")
+script = ExtResource("1_8dy4u")
 
-[node name="Time" type="Label" parent="."]
+[node name="Country_Text" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -24,7 +24,7 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.294567, 0.314827, 0.678429, 1)
 theme_override_fonts/font = SubResource("SystemFont_th1px")
-theme_override_font_sizes/font_size = 60
-text = "start"
+theme_override_font_sizes/font_size = 80
+text = "Package at: Country"
 horizontal_alignment = 1
 vertical_alignment = 1

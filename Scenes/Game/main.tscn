@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=10 format=3 uid="uid://s610lt7pvdv2"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_31mc0"]
 [ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="2_uvs7r"]
 [ext_resource type="PackedScene" uid="uid://cb5n4w2jk2i87" path="res://Entities/Package/package.tscn" id="3_lgh45"]
+[ext_resource type="PackedScene" uid="uid://dcnplxbjhmua3" path="res://Scenes/UI/on_screen_country.tscn" id="4_k5gwh"]
 [ext_resource type="PackedScene" uid="uid://b6sn7mb3wvbcb" path="res://Entities/Package/package_spawn_location.tscn" id="4_wwlgd"]
 [ext_resource type="PackedScene" uid="uid://db50ansbgm3ql" path="res://Scenes/UI/on_screen_timer.tscn" id="5_bfmgx"]
 [ext_resource type="PackedScene" uid="uid://cq3vo0pl6rcu7" path="res://Scenes/UI/pause_menu.tscn" id="6_8rdlk"]
@@ -15,6 +16,27 @@ albedo_color = Color(0, 0.643137, 0.211765, 1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_31mc0")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="UI" instance=ExtResource("6_8rdlk")]
+
+[node name="OnScreenTimer" parent="UI" instance=ExtResource("5_bfmgx")]
+anchors_preset = -1
+anchor_left = 0.444
+anchor_top = 0.067
+anchor_right = 0.556
+anchor_bottom = 0.2
+offset_left = -568.32
+offset_top = 79.76
+offset_right = 568.32
+offset_bottom = 80.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 4
+size_flags_vertical = 10
+
+[node name="OnScreenCountry" parent="UI" instance=ExtResource("4_k5gwh")]
 
 [node name="CSG_floor" type="CSGMesh3D" parent="."]
 use_collision = true
@@ -37,20 +59,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00014, 0, -3.55793)
 [node name="PackageSpawnLocation" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17622, 0, -2.68322)
 country_name = "LEFFT wun"
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="OnScreenTimer" parent="UI/VBoxContainer" instance=ExtResource("5_bfmgx")]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-
-[node name="PauseMenu" parent="UI" instance=ExtResource("6_8rdlk")]
