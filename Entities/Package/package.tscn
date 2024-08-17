@@ -1,4 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cb5n4w2jk2i87"]
+[gd_scene load_steps=5 format=3 uid="uid://cb5n4w2jk2i87"]
+
+[ext_resource type="Script" path="res://Scripts/package.gd" id="1_x8xqr"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_v2gft"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_vcxx0"]
 radial_segments = 8
@@ -8,8 +12,19 @@ rings = 8
 albedo_color = Color(0.911965, 0.410734, 1, 1)
 
 [node name="Package" type="Node3D"]
+script = ExtResource("1_x8xqr")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_v2gft")
+
+[node name="Mesh" type="Node3D" parent="."]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Mesh"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("SphereMesh_vcxx0")
 material = SubResource("StandardMaterial3D_7j13m")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -20,3 +20,6 @@ func _spawn_package(spawn_location : Transform3D):
 # Where the Package must be delivered
 func _choose_next_package_destination():
 	pass
+
+func grabbed_package():
+	pass

@@ -15,4 +15,4 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - just going to focus on simple movement, using this 3rd person camera addon i found too
 - damn that took too long, i had self.position + direction as the target, when i just needed the direction for my calculation...
 - package time ! !
-- 
+- added package, package_spawn_location
