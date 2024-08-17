@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://cb5n4w2jk2i87"]
+[gd_scene load_steps=3 format=3 uid="uid://cb5n4w2jk2i87"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_vcxx0"]
+radial_segments = 8
+rings = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7j13m"]
+albedo_color = Color(0.911965, 0.410734, 1, 1)
 
 [node name="Package" type="Node3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("SphereMesh_vcxx0")
+material = SubResource("StandardMaterial3D_7j13m")
