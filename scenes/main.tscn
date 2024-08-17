@@ -16,8 +16,6 @@ mesh = SubResource("PlaneMesh_fs3fu")
 material = SubResource("StandardMaterial3D_4xehk")
 
 [node name="Globe" parent="." instance=ExtResource("1_11114")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23888, 0)
-_smooth_turn = false
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.780583, 0, -0.625052, 0.238491, 0.924346, 0.297835, 0.577765, -0.381554, 0.721529, 0, 5.48756, 0)

@@ -1,6 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ipjmdxd0b02j"]
+[gd_scene load_steps=7 format=3 uid="uid://ipjmdxd0b02j"]
 
-[ext_resource type="Script" path="res://Entities/Globe/player_grounded.gd" id="1_4mcts"]
+[ext_resource type="Script" path="res://Scripts/player_grounded.gd" id="1_4mcts"]
+[ext_resource type="PackedScene" uid="uid://wmf2eu0uuhrg" path="res://addons/third-person-camera/third_person_camera/ThirdPersonCamera.tscn" id="2_t44mu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7tfn"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_43hfu"]
 
@@ -10,24 +13,32 @@ albedo_color = Color(0.184539, 0.424359, 0.571203, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sc4oi"]
 albedo_color = Color(0, 0.0827382, 0.232575, 1)
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7tfn"]
-
 [node name="Globe" type="CharacterBody3D"]
 script = ExtResource("1_4mcts")
-
-[node name="Mesh_Capsule" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.8, 0)
-mesh = SubResource("CapsuleMesh_43hfu")
-surface_material_override/0 = SubResource("StandardMaterial3D_kgb7q")
-
-[node name="Mesh_Capsule2" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.220505, 0, 0, 0, 0.0726, -0.238466, 0, -0.443002, -0.0390803, 0, 1.60712, -0.176454)
-mesh = SubResource("CapsuleMesh_43hfu")
-surface_material_override/0 = SubResource("StandardMaterial3D_sc4oi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.8, 0)
 shape = SubResource("CapsuleShape3D_n7tfn")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.938746, 0.34461, 0, -0.34461, 0.938746, 0, 3.01215, 2.80477)
+[node name="Looking_Transform" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, -2.5)
+
+[node name="Mesh" type="Node3D" parent="."]
+
+[node name="Mesh_Capsule" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.8, 0)
+mesh = SubResource("CapsuleMesh_43hfu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kgb7q")
+
+[node name="Mesh_Capsule2" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(0.220505, 0, 0, 0, 0.0726, -0.238466, 0, -0.443002, -0.0390803, 0, 1.60712, -0.176454)
+mesh = SubResource("CapsuleMesh_43hfu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_sc4oi")
+
+[node name="ThirdPersonCamera" parent="." instance=ExtResource("2_t44mu")]
+initial_dive_angle_deg = -40.0
+tilt_upper_limit_deg = -20.0
+tilt_lower_limit_deg = -50.0
+mouse_y_sensitiveness = 0.1

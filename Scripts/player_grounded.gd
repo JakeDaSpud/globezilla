@@ -1,6 +1,8 @@
 extends CharacterBody3D
 
 @export var _move_speed : float = 5.0;
+@export var _acceleration_speed : float = 5.0;
+
 @export var _turning_speed : float = 0.1;
 @export var _smooth_turn : bool = true;
 
