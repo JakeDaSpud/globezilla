@@ -15,6 +15,7 @@ albedo_color = Color(0, 0.0827382, 0.232575, 1)
 
 [node name="Globe" type="CharacterBody3D"]
 script = ExtResource("1_4mcts")
+_acceleration_speed = 0.8
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.8, 0)
@@ -38,7 +39,9 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_sc4oi")
 
 [node name="ThirdPersonCamera" parent="." instance=ExtResource("2_t44mu")]
-initial_dive_angle_deg = -40.0
+distance_from_pivot = 7.0
+initial_dive_angle_deg = -50.0
 tilt_upper_limit_deg = -20.0
 tilt_lower_limit_deg = -50.0
+horizontal_rotation_sensitiveness = 20.0
 mouse_y_sensitiveness = 0.1
