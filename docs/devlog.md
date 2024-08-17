@@ -13,3 +13,6 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 # 17/08/2024 (72h left)
 - spent 2 hours trying to use other people's 3d player controller scripts, yeah wow i'm just going to make my own i guess
 - just going to focus on simple movement, using this 3rd person camera addon i found too
+- damn that took too long, i had self.position + direction as the target, when i just needed the direction for my calculation...
+- package time ! !
+- 
