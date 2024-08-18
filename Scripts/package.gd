@@ -18,7 +18,7 @@ func _process(delta):
 	mesh.position.y = self.position.y + sin(_timer * _frequency) * _floating_bounds_amplitude;
 	
 
-func _on_area_3d_body_entered(body):
+func _on_area_3d_body_entered(_body):
 	print_debug("touched package");
 	game_manager.grabbed_package();
 	queue_free();

@@ -28,5 +28,5 @@ func _on_restart_button_pressed():
 	_resume();
 	get_tree().reload_current_scene();
 
-func _process(delta):
+func _process(_delta):
 	_handle_pause();

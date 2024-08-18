@@ -16,3 +16,16 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - damn that took too long, i had self.position + direction as the target, when i just needed the direction for my calculation...
 - package time ! !
 - added package, package_spawn_location
+- accidentally overwrote my timer.gd with country_text.gd, got it back thanks to github! yay committing :D!
+- made a big list of countries i'll include
+
+# 18/08/2024 (48h left uh oh that's scary)
+- in a car now, going to try make the location spawn instantiation work, now THIS is mobile gamedev
+- realising the drop-off hitboxes are going to either be a small sphere, which works fine for a small country like ireland / cyprus, but russia (even at this scale) is going to need a much bigger circle... do i have to make the big collision by hand? or i can have all the colliders there, but disabled, and then enable them when it's the active drop-off country
+- i also have to make my own models, eoin said NOO!!! (i hate 3d modelling and 3d animation)
+- just found a godot 4.3 bug, nvm it might be my keyboard, the duplicate scene enter name section wouldn't let me use backspace, or select any text with shift+arrow
+  - ^ but then it wouldn't let me do anything in the godot text editor too... maybe it was a lagging thing, except it just ate my input and didn't fill my text afterwards
+- got a bit of the destination logic in there, it's just another package touching mechanic, kills itself on touch && can_touch
+- been watching some jvscholz recently, very motivating stuff! been doing 4 hour work sessions, and it seems to be working
+- main gameloop done :DD
+- need to make the assets now maybe?
