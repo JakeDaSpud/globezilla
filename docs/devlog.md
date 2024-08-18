@@ -29,3 +29,5 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - been watching some jvscholz recently, very motivating stuff! been doing 4 hour work sessions, and it seems to be working
 - main gameloop done :DD
 - need to make the assets now maybe?
+- just finished placing little red dots for all 40 countries, hmm you can just keep walking around central europe most of the time... so you only really need to learn east-asia and the americas
+- 

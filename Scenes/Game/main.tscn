@@ -16,7 +16,7 @@ albedo_color = Color(0, 0.643137, 0.211765, 1)
 
 [node name="Main" type="Node3D" node_paths=PackedStringArray("_Spawn_Locations")]
 script = ExtResource("1_31mc0")
-_Spawn_Locations = [NodePath("Country_Spawn_Locations/PackageSpawnLocation"), NodePath("Country_Spawn_Locations/PackageSpawnLocation2"), NodePath("Country_Spawn_Locations/PackageSpawnLocation3")]
+_Spawn_Locations = [NodePath("Country_Spawn_Locations/ireland"), NodePath("Country_Spawn_Locations/iran"), NodePath("Country_Spawn_Locations/iraq")]
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -57,14 +57,206 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.11718, 0, -13.0628)
 
 [node name="Country_Spawn_Locations" type="Node3D" parent="."]
 
-[node name="PackageSpawnLocation" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+[node name="argentina" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
 country_name = "LEFFT wun"
 
-[node name="PackageSpawnLocation2" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+[node name="australia" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="austria" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="bahrain" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="belgium" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="brazil" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="canada" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="chile" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="china" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="cyprus" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="czech_republic" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="denmark" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="egypt" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="england" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="finland" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="france" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="germany" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="ghana" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="hungary" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="india" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="indonesia" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="iran" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.39118, 0, -2.17717)
 country_name = "LEFFT wun"
 
-[node name="PackageSpawnLocation3" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+[node name="iraq" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.94066, 0, -5.74106)
+country_name = "LEFFT wun"
+
+[node name="ireland" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="israel" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="italy" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="japan" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="jordan" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="kuwait" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="malaysia" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="mexico" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="netherlands" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="nigeria" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="oman" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="pakistan" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="paraguay" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="peru" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="philippines" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="poland" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="russia" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="saudi_arabia" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="scotland" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="south_africa" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="south_korea" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="spain" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="thailand" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="turkey" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="uganda" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="uae" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="usa" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
+country_name = "LEFFT wun"
+
+[node name="wales" parent="Country_Spawn_Locations" instance=ExtResource("4_wwlgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46578, 0, 1.79251)
 country_name = "LEFFT wun"
