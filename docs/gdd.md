@@ -30,7 +30,7 @@ Flying (After MVP):
 - AD / Arrow Left, Right Key -> Roll left / right
 - Space -> Accelerate
 
-40 Alphabetised Countries:
+51 Alphabetised Countries:
 - Argentina
 - Australia
 - Austria

@@ -30,4 +30,6 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - main gameloop done :DD
 - need to make the assets now maybe?
 - just finished placing little red dots for all 40 countries, hmm you can just keep walking around central europe most of the time... so you only really need to learn east-asia and the americas
-- 
+- just did it all again by typing the names out, yeesh
+- okay made the map, put it in, added all the locations BY HAND to the array, now it works :DDDD
+- need to position all locations, make round system, then MVP is done
