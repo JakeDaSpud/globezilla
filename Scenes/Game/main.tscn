@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=13 format=3 uid="uid://s610lt7pvdv2"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_31mc0"]
 [ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="2_uvs7r"]
@@ -19,9 +19,11 @@ albedo_color = Color(0.127827, 0.600301, 0.58333, 1)
 background_mode = 1
 background_color = Color(0.711071, 0.807423, 1, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_4pr0y"]
+size = Vector3(30, 1.27591, 1)
+
 [node name="Main" type="Node3D"]
 script = ExtResource("1_31mc0")
-_round_max = 2
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -294,3 +296,23 @@ light_energy = 20.0
 light_size = 1.0
 light_bake_mode = 1
 omni_range = 19.4099
+
+[node name="World_Borders" type="Node3D" parent="WorldEnvironment"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WorldEnvironment/World_Borders"]
+
+[node name="North" type="CollisionShape3D" parent="WorldEnvironment/World_Borders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.89996, -10)
+shape = SubResource("BoxShape3D_4pr0y")
+
+[node name="East" type="CollisionShape3D" parent="WorldEnvironment/World_Borders/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.632, 1.9, 0)
+shape = SubResource("BoxShape3D_4pr0y")
+
+[node name="West" type="CollisionShape3D" parent="WorldEnvironment/World_Borders/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.632, 1.9, 0)
+shape = SubResource("BoxShape3D_4pr0y")
+
+[node name="South" type="CollisionShape3D" parent="WorldEnvironment/World_Borders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.137991, 10)
+shape = SubResource("BoxShape3D_4pr0y")
