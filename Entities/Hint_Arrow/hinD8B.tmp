@@ -8,6 +8,7 @@ metallic = 0.04
 
 [node name="HintArrow" type="Node3D"]
 script = ExtResource("1_tvpvd")
+_floating_bounds_amplitude = 137.35
 
 [node name="Mesh" type="Node3D" parent="."]
 
