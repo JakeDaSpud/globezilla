@@ -7,12 +7,16 @@ func _resume():
 	get_tree().paused = false;
 	$PanelContainer/VBoxContainer/Resume_Button.disabled = true;
 	$PanelContainer/VBoxContainer/Restart_Button.disabled = true;
+	$PanelContainer/VBoxContainer/Resume_Button.mouse_default_cursor_shape = CURSOR_ARROW;
+	$PanelContainer/VBoxContainer/Restart_Button.mouse_default_cursor_shape = CURSOR_ARROW;
 	$AnimationPlayer.play_backwards("blur");
 
 func _pause():
 	get_tree().paused = true;
 	$PanelContainer/VBoxContainer/Resume_Button.disabled = false;
 	$PanelContainer/VBoxContainer/Restart_Button.disabled = false;
+	$PanelContainer/VBoxContainer/Resume_Button.mouse_default_cursor_shape = CURSOR_POINTING_HAND;
+	$PanelContainer/VBoxContainer/Restart_Button.mouse_default_cursor_shape = CURSOR_POINTING_HAND;
 	$AnimationPlayer.play("blur");
 
 func _handle_pause():
