@@ -2,6 +2,7 @@ extends Node3D
 
 @onready var _ui_country = $UI/OnScreenCountry;
 @onready var _ui_timer = $UI/OnScreenTimer;
+@onready var _ui_final_time = $UI/OnScreenFinalTime;
 
 const package_entity = preload("res://Entities/Package/package.tscn");
 const destination_trigger_entity = preload("res://Entities/Package/package_destination.tscn");
@@ -12,8 +13,15 @@ const spawn_location_entity = preload("res://Scripts/package_spawn_location.gd")
 var _CURRENT_spawn_location : spawn_location_entity;
 var _CURRENT_destination_location : spawn_location_entity;
 
+var _final_time_string : String = "";
+var _final_time : String = "";
+var _round : int = 0;
+var _round_max : int = 15;
+var _game_end = false;
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	_ui_final_time.set_text("");
 	_next_package();
 	_spawn_package();
 	
@@ -75,6 +83,29 @@ func grabbed_package() -> void:
 
 # Delivered package -> go get the next one now
 func delivered_package() -> void:
+	_next_round();
 	_next_package();
 	_spawn_package();
+	
+
+func _update_ui_round() -> void:
+	# If game is done, add Final Time
+	if _game_end:
+		_final_time_string = " Final Time: " + _final_time + " |";
+		_final_time_string += str(" ", _round, "/", _round_max);
+	
+	else:
+		_final_time_string = str(" ", _round, "/", _round_max);
+	
+	_ui_final_time.set_text(_final_time_string);
+
+func _next_round() -> void:
+	_round += 1;
+	if _round >= _round_max && !_game_end:
+		_set_final_time();
+	_update_ui_round();
+
+func _set_final_time() -> void:
+	_game_end = true;
+	_final_time = _ui_timer._label.text;
 	

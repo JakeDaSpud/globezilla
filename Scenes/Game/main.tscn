@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=12 format=3 uid="uid://s610lt7pvdv2"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_31mc0"]
 [ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="2_uvs7r"]
 [ext_resource type="PackedScene" uid="uid://dcnplxbjhmua3" path="res://Scenes/UI/on_screen_country.tscn" id="4_k5gwh"]
 [ext_resource type="PackedScene" uid="uid://b6sn7mb3wvbcb" path="res://Entities/Package/package_spawn_location.tscn" id="4_wwlgd"]
+[ext_resource type="PackedScene" uid="uid://btn8ss1ocgfd6" path="res://Scenes/UI/on_screen_final_time.tscn" id="5_7vt3r"]
 [ext_resource type="PackedScene" uid="uid://db50ansbgm3ql" path="res://Scenes/UI/on_screen_timer.tscn" id="5_bfmgx"]
 [ext_resource type="PackedScene" uid="uid://cq3vo0pl6rcu7" path="res://Scenes/UI/pause_menu.tscn" id="6_8rdlk"]
 [ext_resource type="Texture2D" uid="uid://bsumkp3vsn5bq" path="res://Assets/Images/map_ascii_double.png" id="6_hnqsm"]
@@ -15,6 +16,8 @@ size = Vector2(10, 10)
 albedo_color = Color(0.127827, 0.600301, 0.58333, 1)
 
 [sub_resource type="Environment" id="Environment_0jmk6"]
+background_mode = 1
+background_color = Color(0.711071, 0.807423, 1, 1)
 
 [node name="Main" type="Node3D" node_paths=PackedStringArray("_Spawn_Locations")]
 script = ExtResource("1_31mc0")
@@ -41,8 +44,19 @@ size_flags_vertical = 10
 
 [node name="OnScreenCountry" parent="UI" instance=ExtResource("4_k5gwh")]
 
+[node name="OnScreenFinalTime" parent="UI" instance=ExtResource("5_7vt3r")]
+
+[node name="pause_button_label" type="Label" parent="UI"]
+offset_left = 1112.0
+offset_top = 672.0
+offset_right = 1280.0
+offset_bottom = 720.0
+theme_override_font_sizes/font_size = 32
+text = "Menu: [Q]"
+horizontal_alignment = 1
+
 [node name="CSG_floor" type="CSGMesh3D" parent="."]
-transform = Transform3D(3.04143, 0, 0, 0, 1, 0, 0, 0, 1.78884, 0, 0, 0)
+transform = Transform3D(23.7027, 0, 0, 0, 1, 0, 0, 0, 12.3751, 0, 0, 0)
 use_collision = true
 mesh = SubResource("PlaneMesh_fs3fu")
 material = SubResource("StandardMaterial3D_4xehk")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://btn8ss1ocgfd6"]
+
+[ext_resource type="Script" path="res://Scripts/on_screen_country.gd" id="1_x2mcm"]
+
+[sub_resource type="SystemFont" id="SystemFont_th1px"]
+subpixel_positioning = 0
+
+[node name="OnScreenCountry" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x2mcm")
+
+[node name="Country_Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.115
+offset_top = 649.0
+offset_bottom = 635.2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.294567, 0.314827, 0.678429, 1)
+theme_override_fonts/font = SubResource("SystemFont_th1px")
+theme_override_font_sizes/font_size = 50
+text = " Final Time: "
+vertical_alignment = 1
