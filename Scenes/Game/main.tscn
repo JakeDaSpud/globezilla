@@ -19,9 +19,9 @@ albedo_color = Color(0.127827, 0.600301, 0.58333, 1)
 background_mode = 1
 background_color = Color(0.711071, 0.807423, 1, 1)
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("_Spawn_Locations")]
+[node name="Main" type="Node3D"]
 script = ExtResource("1_31mc0")
-_Spawn_Locations = [NodePath("Country_Spawn_Locations/argentina"), NodePath("Country_Spawn_Locations/australia"), NodePath("Country_Spawn_Locations/austria"), NodePath("Country_Spawn_Locations/bahrain"), NodePath("Country_Spawn_Locations/belgium"), NodePath("Country_Spawn_Locations/brazil"), NodePath("Country_Spawn_Locations/canada"), NodePath("Country_Spawn_Locations/chile"), NodePath("Country_Spawn_Locations/china"), NodePath("Country_Spawn_Locations/cyprus"), NodePath("Country_Spawn_Locations/czech_republic"), NodePath("Country_Spawn_Locations/denmark"), NodePath("Country_Spawn_Locations/egypt"), NodePath("Country_Spawn_Locations/england"), NodePath("Country_Spawn_Locations/finland"), NodePath("Country_Spawn_Locations/france"), NodePath("Country_Spawn_Locations/germany"), NodePath("Country_Spawn_Locations/ghana"), NodePath("Country_Spawn_Locations/hungary"), NodePath("Country_Spawn_Locations/india"), NodePath("Country_Spawn_Locations/indonesia"), NodePath("Country_Spawn_Locations/iran"), NodePath("Country_Spawn_Locations/iraq"), NodePath("Country_Spawn_Locations/ireland"), NodePath("Country_Spawn_Locations/israel"), NodePath("Country_Spawn_Locations/italy"), NodePath("Country_Spawn_Locations/japan"), NodePath("Country_Spawn_Locations/jordan"), NodePath("Country_Spawn_Locations/kuwait"), NodePath("Country_Spawn_Locations/malaysia"), NodePath("Country_Spawn_Locations/mexico"), NodePath("Country_Spawn_Locations/netherlands"), NodePath("Country_Spawn_Locations/nigeria"), NodePath("Country_Spawn_Locations/oman"), NodePath("Country_Spawn_Locations/pakistan"), NodePath("Country_Spawn_Locations/paraguay"), NodePath("Country_Spawn_Locations/peru"), NodePath("Country_Spawn_Locations/philippines"), NodePath("Country_Spawn_Locations/poland"), NodePath("Country_Spawn_Locations/russia"), NodePath("Country_Spawn_Locations/saudi_arabia"), NodePath("Country_Spawn_Locations/scotland"), NodePath("Country_Spawn_Locations/south_africa"), NodePath("Country_Spawn_Locations/south_korea"), NodePath("Country_Spawn_Locations/spain"), NodePath("Country_Spawn_Locations/thailand"), NodePath("Country_Spawn_Locations/turkey"), NodePath("Country_Spawn_Locations/uganda"), NodePath("Country_Spawn_Locations/uae"), NodePath("Country_Spawn_Locations/usa"), NodePath("Country_Spawn_Locations/wales")]
+_round_max = 2
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -46,11 +46,13 @@ size_flags_vertical = 10
 
 [node name="pause_button_label" type="Label" parent="UI"]
 offset_left = 1112.0
-offset_top = 672.0
+offset_top = 576.0
 offset_right = 1280.0
-offset_bottom = 720.0
+offset_bottom = 717.0
 theme_override_font_sizes/font_size = 32
-text = "Menu: [Q]"
+text = "Menu: [Q]
+  Hint: [E]
+Reset: [R]"
 horizontal_alignment = 1
 
 [node name="PauseMenu" parent="UI" instance=ExtResource("6_8rdlk")]

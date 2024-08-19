@@ -33,3 +33,12 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - just did it all again by typing the names out, yeesh
 - okay made the map, put it in, added all the locations BY HAND to the array, now it works :DDDD
 - need to position all locations, make round system, then MVP is done
+
+# 19/08/2024 (24h left)
+- whoops forgot to keep updating this lol
+- did the location, MVP IS DONE!!!
+- uploaded publicly to itch.io
+- made package model
+- made rounds system, game tells you your final time after 15 deliveries
+- made feedback.md for the player feedback
+- 2 players so far

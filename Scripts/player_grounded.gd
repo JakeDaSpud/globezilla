@@ -1,12 +1,23 @@
 extends CharacterBody3D
 
+var game_manager : Node3D;
+
 @export var _move_speed : float = 5.0;
 @export var _acceleration_speed : float = 5.0;
 
 @export var _turning_speed : float = 10;
 @export var _smooth_turn : bool = true;
 
+func _ready():
+	game_manager = get_parent();
+
 func _physics_process(delta):
+	if Input.is_action_just_pressed("restart"):
+		get_tree().reload_current_scene();
+	
+	if Input.is_action_just_pressed("hint"):
+		game_manager.hint();
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

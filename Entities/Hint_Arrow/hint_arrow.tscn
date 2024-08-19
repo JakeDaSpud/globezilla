@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://66w24fywcquk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5l6l"]
+albedo_color = Color(0.92567, 0.0964408, 0.281924, 1)
+metallic = 0.04
+
+[node name="HintArrow" type="Node3D"]
+
+[node name="Mesh" type="Node3D" parent="."]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Mesh"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Mesh/CSGCombiner3D"]
+transform = Transform3D(0.221732, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.872697, 0)
+size = Vector3(1, 1.08447, 0.102539)
+material = SubResource("StandardMaterial3D_p5l6l")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Mesh/CSGCombiner3D"]
+transform = Transform3D(0.221732, 0, 0, 0, 1, 0, 0, 0, 1, 0.000403892, 0.262484, 0)
+size = Vector3(0.682804, 0.10968, 0.102539)
+material = SubResource("StandardMaterial3D_p5l6l")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Mesh/CSGCombiner3D"]
+transform = Transform3D(0.115259, -0.263632, 0, 0.0830299, 0.365966, 0, 0, 0, 1, -0.149541, 0.432129, 0)
+size = Vector3(1, 1, 0.102539)
+material = SubResource("StandardMaterial3D_p5l6l")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Mesh/CSGCombiner3D"]
+transform = Transform3D(0.115213, 0.263837, 0, -0.0830943, 0.365819, 0, 0, 0, 1, 0.15, 0.432, 0)
+size = Vector3(1, 1, 0.102539)
+material = SubResource("StandardMaterial3D_p5l6l")
