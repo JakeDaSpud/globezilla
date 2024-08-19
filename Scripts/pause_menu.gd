@@ -17,6 +17,7 @@ func _pause():
 	$PanelContainer/VBoxContainer/Restart_Button.disabled = false;
 	$PanelContainer/VBoxContainer/Resume_Button.mouse_default_cursor_shape = CURSOR_POINTING_HAND;
 	$PanelContainer/VBoxContainer/Restart_Button.mouse_default_cursor_shape = CURSOR_POINTING_HAND;
+	$PanelContainer/VBoxContainer/Resume_Button.grab_focus();
 	$AnimationPlayer.play("blur");
 
 func _handle_pause():
