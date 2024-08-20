@@ -1,9 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://db50ansbgm3ql"]
 
 [ext_resource type="Script" path="res://Scripts/on_screen_timer.gd" id="1_o5t2c"]
-
-[sub_resource type="SystemFont" id="SystemFont_th1px"]
-subpixel_positioning = 0
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="2_6pc2c"]
 
 [node name="OnScreenTimer" type="Control"]
 layout_mode = 3
@@ -22,8 +20,9 @@ anchor_bottom = 0.115
 offset_bottom = 0.199997
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0.294567, 0.314827, 0.678429, 1)
-theme_override_fonts/font = SubResource("SystemFont_th1px")
+theme_override_colors/font_outline_color = Color(0.235294, 0.235294, 0.235294, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_6pc2c")
 theme_override_font_sizes/font_size = 60
 text = "start"
 horizontal_alignment = 1

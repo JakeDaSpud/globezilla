@@ -42,3 +42,10 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 - made rounds system, game tells you your final time after 15 deliveries
 - made feedback.md for the player feedback
 - 2 players so far
+- made all the hints and arrows and menus work, all works with controllers too! button focusing and manipulating the order of ui / buttons is fun!
+- making globe's model and... i forgot how fun lowpoly modelling is... why was i putting this off so much D:
+- gonna give 'em a little delivery hat
+
+# 20/08/2024 (>24h left)
+- finished the globe model last night, did animations this morning, they are bad but they are there
+- 

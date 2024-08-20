@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=14 format=3 uid="uid://s610lt7pvdv2"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_31mc0"]
 [ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="2_uvs7r"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b6sn7mb3wvbcb" path="res://Entities/Package/package_spawn_location.tscn" id="4_wwlgd"]
 [ext_resource type="PackedScene" uid="uid://btn8ss1ocgfd6" path="res://Scenes/UI/on_screen_final_time.tscn" id="5_7vt3r"]
 [ext_resource type="PackedScene" uid="uid://db50ansbgm3ql" path="res://Scenes/UI/on_screen_timer.tscn" id="5_bfmgx"]
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="5_fhx1w"]
 [ext_resource type="PackedScene" uid="uid://cq3vo0pl6rcu7" path="res://Scenes/UI/pause_menu.tscn" id="6_8rdlk"]
 [ext_resource type="Texture2D" uid="uid://bsumkp3vsn5bq" path="res://Assets/Images/map_ascii_double.png" id="6_hnqsm"]
 
@@ -48,9 +49,13 @@ size_flags_vertical = 10
 
 [node name="pause_button_label" type="Label" parent="UI"]
 offset_left = 1112.0
-offset_top = 576.0
+offset_top = 552.0
 offset_right = 1280.0
-offset_bottom = 717.0
+offset_bottom = 723.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.235294, 0.235294, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_fhx1w")
 theme_override_font_sizes/font_size = 32
 text = "Menu: [Q]
   Hint: [E]

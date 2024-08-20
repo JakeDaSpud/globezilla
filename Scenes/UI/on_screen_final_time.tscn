@@ -1,9 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://btn8ss1ocgfd6"]
 
 [ext_resource type="Script" path="res://Scripts/on_screen_country.gd" id="1_x2mcm"]
-
-[sub_resource type="SystemFont" id="SystemFont_th1px"]
-subpixel_positioning = 0
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="2_6sias"]
 
 [node name="OnScreenCountry" type="Control"]
 layout_mode = 3
@@ -23,8 +21,9 @@ offset_top = 649.0
 offset_bottom = 635.2
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0.294567, 0.314827, 0.678429, 1)
-theme_override_fonts/font = SubResource("SystemFont_th1px")
+theme_override_colors/font_outline_color = Color(0.235294, 0.235294, 0.235294, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_6sias")
 theme_override_font_sizes/font_size = 50
 text = " Final Time: "
 vertical_alignment = 1

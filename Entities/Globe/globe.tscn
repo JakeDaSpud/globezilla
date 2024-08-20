@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ipjmdxd0b02j"]
+[gd_scene load_steps=8 format=3 uid="uid://ipjmdxd0b02j"]
 
 [ext_resource type="Script" path="res://Scripts/player_grounded.gd" id="1_4mcts"]
+[ext_resource type="PackedScene" uid="uid://dvbbrgo2idgde" path="res://Assets/Models/globe_animated.glb" id="2_2j8p3"]
 [ext_resource type="PackedScene" uid="uid://wmf2eu0uuhrg" path="res://addons/third-person-camera/third_person_camera/ThirdPersonCamera.tscn" id="2_t44mu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7tfn"]
@@ -28,15 +29,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, -2.5)
 
 [node name="Mesh_Capsule" type="MeshInstance3D" parent="Mesh"]
 transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.8, 0)
+visible = false
 mesh = SubResource("CapsuleMesh_43hfu")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_kgb7q")
 
 [node name="Mesh_Capsule2" type="MeshInstance3D" parent="Mesh"]
 transform = Transform3D(0.220505, 0, 0, 0, 0.0726, -0.238466, 0, -0.443002, -0.0390803, 0, 1.60712, -0.176454)
+visible = false
 mesh = SubResource("CapsuleMesh_43hfu")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_sc4oi")
+
+[node name="globe_animated" parent="Mesh" instance=ExtResource("2_2j8p3")]
+transform = Transform3D(0.375, 0, 0, 0, 0.375, 0, 0, 0, 0.375, 0, 0, 0)
 
 [node name="ThirdPersonCamera" parent="." instance=ExtResource("2_t44mu")]
 distance_from_pivot = 7.0

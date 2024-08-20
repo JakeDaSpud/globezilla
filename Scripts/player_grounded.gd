@@ -2,6 +2,8 @@ extends CharacterBody3D
 
 var game_manager : Node3D;
 
+@onready var animation_tree : AnimationPlayer = $Mesh/globe_animated/AnimationPlayer;
+
 @export var _move_speed : float = 5.0;
 @export var _acceleration_speed : float = 5.0;
 
@@ -10,6 +12,7 @@ var game_manager : Node3D;
 
 func _ready():
 	game_manager = get_parent();
+	animation_tree.play("Idle");
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("restart"):
@@ -28,6 +31,8 @@ func _physics_process(delta):
 	var direction = Vector3(input_dir.x, 0, input_dir.y).normalized();
 	
 	if direction:
+		animation_tree.play("Walking");
+		
 		var target_direction : Vector3 = direction;
 		var target_rotation : Basis = Transform3D().looking_at(target_direction, Vector3.UP).basis;
 		var current_rotation : Basis = self.global_basis;
@@ -43,6 +48,9 @@ func _physics_process(delta):
 			self.global_basis = smooth_rotation;
 	
 	else:
+		if velocity == Vector3.ZERO:
+			animation_tree.play("Idle");
+		
 		velocity.x = move_toward(velocity.x, 0, _acceleration_speed);
 		velocity.z = move_toward(velocity.z, 0, _acceleration_speed);
 	
