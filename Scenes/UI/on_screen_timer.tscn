@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://db50ansbgm3ql"]
 
 [ext_resource type="Script" path="res://Scripts/on_screen_timer.gd" id="1_o5t2c"]
-[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="2_6pc2c"]
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Fonts/dubai_font.tres" id="2_6pc2c"]
 
 [node name="OnScreenTimer" type="Control"]
 layout_mode = 3

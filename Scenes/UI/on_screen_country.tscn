@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcnplxbjhmua3"]
 
 [ext_resource type="Script" path="res://Scripts/on_screen_country.gd" id="1_8dy4u"]
-[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="2_fr3k0"]
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Fonts/dubai_font.tres" id="2_fr3k0"]
 
 [node name="OnScreenCountry" type="Control"]
 layout_mode = 3

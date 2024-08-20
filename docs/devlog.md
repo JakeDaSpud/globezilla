@@ -48,4 +48,5 @@ i didn't even know i was going to do this jam, but i came up with the idea once 
 
 # 20/08/2024 (>24h left)
 - finished the globe model last night, did animations this morning, they are bad but they are there
-- 
+- the models are done, i just made all of my audio sfx in 15 minutes (some acapella...) AND i made a banger Windwaker-inspired piece in 30 MINUTES!!! so fast, sick name too: "Kaiju Delivery Service"
+- just gotta implement the sound, then it's the final build

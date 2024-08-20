@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://s610lt7pvdv2"]
+[gd_scene load_steps=18 format=3 uid="uid://s610lt7pvdv2"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_31mc0"]
 [ext_resource type="PackedScene" uid="uid://ipjmdxd0b02j" path="res://Entities/Globe/globe.tscn" id="2_uvs7r"]
@@ -6,9 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://b6sn7mb3wvbcb" path="res://Entities/Package/package_spawn_location.tscn" id="4_wwlgd"]
 [ext_resource type="PackedScene" uid="uid://btn8ss1ocgfd6" path="res://Scenes/UI/on_screen_final_time.tscn" id="5_7vt3r"]
 [ext_resource type="PackedScene" uid="uid://db50ansbgm3ql" path="res://Scenes/UI/on_screen_timer.tscn" id="5_bfmgx"]
-[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Font/dubai_font.tres" id="5_fhx1w"]
+[ext_resource type="SystemFont" uid="uid://cu528g42ixrbg" path="res://Assets/Fonts/dubai_font.tres" id="5_fhx1w"]
 [ext_resource type="PackedScene" uid="uid://cq3vo0pl6rcu7" path="res://Scenes/UI/pause_menu.tscn" id="6_8rdlk"]
 [ext_resource type="Texture2D" uid="uid://bsumkp3vsn5bq" path="res://Assets/Images/map_ascii_double.png" id="6_hnqsm"]
+[ext_resource type="AudioStream" uid="uid://dbif146bak7bm" path="res://Assets/Audio/SFX/hint_fwip.mp3" id="10_d2tfs"]
+[ext_resource type="AudioStream" uid="uid://hcuuoogerex4" path="res://Assets/Audio/Music/Globezilla_OST-Kaiju_Delivery_Service.mp3" id="10_dn6tj"]
+[ext_resource type="AudioStream" uid="uid://w1a444jyu8mo" path="res://Assets/Audio/SFX/package_pop.mp3" id="11_226f0"]
+[ext_resource type="AudioStream" uid="uid://cbaocqvbykle7" path="res://Assets/Audio/SFX/delivery_sfx.mp3" id="12_neq2w"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_fs3fu"]
 size = Vector2(10, 10)
@@ -321,3 +325,25 @@ shape = SubResource("BoxShape3D_4pr0y")
 [node name="South" type="CollisionShape3D" parent="WorldEnvironment/World_Borders/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.137991, 10)
 shape = SubResource("BoxShape3D_4pr0y")
+
+[node name="SFX_Hint" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_d2tfs")
+volume_db = -10.0
+mix_target = 2
+
+[node name="SFX_Package" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_226f0")
+volume_db = -25.0
+mix_target = 2
+
+[node name="SFX_Delivery" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_neq2w")
+volume_db = -25.0
+pitch_scale = 2.0
+mix_target = 2
+
+[node name="Music-Kaiju_Delivery_Service" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("10_dn6tj")
+volume_db = -20.0
+autoplay = true

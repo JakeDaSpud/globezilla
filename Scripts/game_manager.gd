@@ -4,6 +4,10 @@ extends Node3D
 @onready var _ui_timer = $UI/OnScreenTimer;
 @onready var _ui_final_time = $UI/OnScreenFinalTime;
 
+@onready var _sfx_hint = $SFX_Hint;
+@onready var _sfx_package = $SFX_Package;
+@onready var _sfx_delivery = $SFX_Delivery;
+
 const package_entity = preload("res://Entities/Package/package.tscn");
 const destination_trigger_entity = preload("res://Entities/Package/package_destination.tscn");
 const spawn_location_entity = preload("res://Scripts/package_spawn_location.gd");
@@ -92,6 +96,8 @@ func _spawn_destination() -> void:
 
 # Grabbed package -> bring it to the destination now
 func grabbed_package() -> void:
+	_sfx_package.play();
+	
 	# Make sure this location hasn't been used already
 	_next_destination();
 	# Finally, spawn in a valid location
@@ -102,6 +108,8 @@ func grabbed_package() -> void:
 
 # Delivered package -> go get the next one now
 func delivered_package() -> void:
+	_sfx_delivery.play();
+	
 	if _hint_is_active:
 		_CURRENT_arrow.queue_free();
 		_CURRENT_arrow = null;
@@ -141,6 +149,8 @@ func _set_final_time() -> void:
 func hint() -> void:
 	if (!_CURRENT_destination_location) || (_hint_is_active) || (!_can_spawn_arrow):
 		return;
+	
+	_sfx_hint.play();
 	
 	_used_hint = true;
 	_hint_is_active = true;
